@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: dotnet build DemoApp/Server/src/Server.csproj
       - name: Publish
-        run: dotnet publish -c release -o out DemoApp/Server/src/Server.csproj
+        run: dotnet publish -c release -o DemoApp/Server/out DemoApp/Server/src/Server.csproj
       
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v2.1.0
