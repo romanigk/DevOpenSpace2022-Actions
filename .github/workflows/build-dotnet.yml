@@ -22,6 +22,7 @@ jobs:
         run: |
           dotnet build DemoApp/Client/src/Client.csproj
           dotnet build DemoApp/Server/src/Server.csproj
-        
-        
-    
+      - name: publish
+        run: |
+          dotnet publish DemoApp/Client/src/Client.csproj
+          dotnet puplish DemoApp/Server/src/Server.csproj
