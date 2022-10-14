@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu
     steps:
       - name: Say Hello
-      - run: echo Hallo DevOpenSpace 2022
+      run: echo Hallo DevOpenSpace 2022
