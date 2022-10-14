@@ -1,0 +1,10 @@
+name: demo-4
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo Hallo DevOpenSpace 2022
